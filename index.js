@@ -1,6 +1,5 @@
 const pg = require('pg')
 const express = require('express');
-const { useParams } = require('react-router-dom');
 const client = new pg.Client(process.env.DATABASE_URL || 'postgres://localhost/icecream_flavors')
 const app = express()
 app.use(express.json())
